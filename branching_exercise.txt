@@ -1,0 +1,22 @@
+git branch NAME_BRANCH or git checkout -b NAME_BRANCH
+fast fowrward is when git can tell when the commmits happened and put one set of commits on top of another. Recursive is when commits are not in order and/or in different branches 
+git checkout 
+git branch -d NAME_BRANCH or -D to force 
+When same files are made and modified on seperate branches then merged 
+
+
+Part 2 
+
+1. git checkout -b first_merge 
+touch branching_exercise.txt
+git add .
+git commit -m "branching steps exs"
+git checkout master 
+git merge first_merge  
+
+2. git checkout -b second_merge 
+touch branching_exercise.txt (edit differently)
+git add .
+git commit -m "new modified file"
+git checkout first_merge 
+git merge second_merge
